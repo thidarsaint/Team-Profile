@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Team"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_g_dragon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="40dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/img_taeyeon"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gdragon"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_taeyeon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="40dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintLeft_toRightOf="@id/img_g_dragon"
+        app:layout_constraintRight_toLeftOf="@id/img_yangyang"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/taeyeon_two"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_yangyang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="40dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintLeft_toRightOf="@id/img_taeyeon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/yangyang_one"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_gdragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G-Dragon"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_taeyeon"
+        app:layout_constraintTop_toBottomOf="@id/img_g_dragon"
+        />
+
+    <TextView
+        android:id="@+id/txt_taeyeon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tae Yeon"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/txt_gdragon"
+        app:layout_constraintRight_toLeftOf="@id/txt_yangyang"
+        app:layout_constraintTop_toBottomOf="@id/img_taeyeon"
+        />
+
+    <TextView
+        android:id="@+id/txt_yangyang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yang Yang"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/txt_taeyeon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_yangyang"
+        />
+
+    <TextView
+        android:id="@+id/txt_occupation_gd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singer &amp; Writer"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_occupation_taeyeon"
+        app:layout_constraintTop_toBottomOf="@id/txt_gdragon"
+        />
+
+    <TextView
+        android:id="@+id/txt_occupation_taeyeon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singer"
+        app:layout_constraintLeft_toRightOf="@id/txt_occupation_gd"
+        app:layout_constraintRight_toLeftOf="@id/txt_occupation_yangyang"
+        app:layout_constraintTop_toBottomOf="@id/txt_taeyeon"
+        />
+
+    <TextView
+        android:id="@+id/txt_occupation_yangyang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singer &amp; Actor"
+        app:layout_constraintLeft_toRightOf="@id/txt_occupation_taeyeon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_yangyang"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_yangmi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="40dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/img_lixian"
+        app:layout_constraintTop_toBottomOf="@id/txt_occupation_gd"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/yangmi_two"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_lixian"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="40dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/img_yangmi"
+        app:layout_constraintRight_toLeftOf="@id/img_dilraba"
+        app:layout_constraintTop_toBottomOf="@id/txt_occupation_taeyeon"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lixian_three"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_dilraba"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="40dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@id/img_lixian"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_occupation_yangyang"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dilraba_one"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_yangmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yang Mi"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_lixian"
+        app:layout_constraintTop_toBottomOf="@id/img_yangmi"
+        />
+
+    <TextView
+        android:id="@+id/txt_lixian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Li Xian"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/txt_yangmi"
+        app:layout_constraintRight_toLeftOf="@id/txt_dilraba"
+        app:layout_constraintTop_toBottomOf="@id/img_lixian"
+        />
+
+    <TextView
+        android:id="@+id/txt_dilraba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dilraba"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/txt_lixian"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_dilraba"
+        />
+
+    <TextView
+        android:id="@+id/txt_occupation_yangmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintRight_toLeftOf="@id/txt_occupation_lixian"
+        app:layout_constraintTop_toBottomOf="@id/txt_yangmi"
+        />
+
+    <TextView
+        android:id="@+id/txt_occupation_lixian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actor"
+        app:layout_constraintLeft_toRightOf="@id/txt_occupation_yangmi"
+        app:layout_constraintRight_toLeftOf="@id/txt_occupation_dilraba"
+        app:layout_constraintTop_toBottomOf="@id/txt_lixian"
+        />
+
+    <TextView
+        android:id="@+id/txt_occupation_dilraba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actress"
+        app:layout_constraintLeft_toRightOf="@id/txt_occupation_lixian"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_dilraba"
+        />
+
+    <TextView
+        android:id="@+id/txt_missions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_occupation_lixian"
+        />
+
+    <TextView
+        android:id="@+id/txt_about_missions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="After 1660 in England, when women first started to appear on stage, the terms actor or actress were initially used interchangeably for female performers, but later, influenced by the French actrice, actress became the commonly used term for women in theater and film. The etymology is a simple derivation from actor with -ess added.[5] When referring to groups of performers of both sexes, actors is preferred.[6] Actor is also used before the full name of a performer as a gender-specific term. Within the profession, the re-adoption of the neutral term dates to the post-war period of the 1950 and '60s, when the contributions of women to cultural life in general were being reviewed.[7] When The Observer and The Guardian published their new joint style guide in 2010, it stated Use ['actor'] for both male and female actors; do not use actress except when in name of award, e.g. Oscar for best actress."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_missions"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
